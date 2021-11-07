@@ -170,6 +170,7 @@ def update():
         if personagem_vivo == False and pyxel.btnp(pyxel.KEY_R) :
             fase = 0
             a = 2
+            ini_mov_speed = 1
             restart = True
             
        
@@ -230,7 +231,7 @@ def draw():
             pyxel.circb(x, y, 20, 0) 
             
         if dev == True :
-            pyxel.text (10, 20, "coordenadas: {0} {1}".format(x,y), pyxel.COLOR_BLACK)  
+            pyxel.text (10, 30, "coordenadas: {0} {1}".format(x,y), pyxel.COLOR_BLACK)  
         if limpo == True or dev == True:
             pyxel.text (160, 5, "PROXIMA FASE LIBERADA", pyxel.COLOR_WHITE)
         #teleporte
